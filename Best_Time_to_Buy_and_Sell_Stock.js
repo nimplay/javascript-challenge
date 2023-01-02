@@ -5,7 +5,6 @@
 var maxProfit = function(prices) {
     let maxProf = 0;
    let minProf = prices[0];
-   let prof = 0;
    for(let i = 1; i < prices.length; i++){
        minProf  = Math.min(minProf , prices[i]);
        maxProf = Math.max(maxProf, prices[i]-minProf );
